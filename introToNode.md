@@ -33,7 +33,6 @@ Why do we use it?
 * We use it to manage Node.js libraries
 How do we use it?
 * Through the command line
-* ```npm init -y```
 What is a package.json?
 * It is a file that contains the metadata for the project. It also handles the dependencies
 How do we create one?
@@ -41,12 +40,16 @@ How do we create one?
 2. In your terminal type ```npm adduser``` and sign in using your credentials
 3. Make a package with ```md [package name]```
 4. Create a package.json file ```cd [package name] && touch package.json```
-5. In the package.json name the package like ```    {
+5. In the package.json name the package like 
+```    
+{
     "name": @[username]/[package name]
-}``` 
+}
+``` 
 This creates the package under the scope of your username (callled a scoped package)
 6. Add a version to your package
-```{
+```
+{
     "name": @[username]/[package name],
     "version": "1.0.0"
 }
@@ -61,7 +64,8 @@ Given a version number MAJOR.MINOR.PATCH, increment the
 9. Add a main file and add your code, also add the main to your package.json
 10. Create and add it to a GitHub repo, also add the "repository" to your package.json
 11. Your package.json should look a little like: 
-```{
+```
+{
     "name": "@[username]/[package name]",
     "version": "1.0.0",
     "description": "[Description]",
@@ -75,11 +79,12 @@ Given a version number MAJOR.MINOR.PATCH, increment the
         "[username]"
         ]
     }
+```
 What are node modules?
-    * Module in Node.js is a simple or complex functionality organized in single or multiple JavaScript files which can be reused throughout the Node.js application. Each module in Node.js has its own context, so it cannot interfere with other modules or pollute global scope.
+* Module in Node.js is a simple or complex functionality organized in single or multiple JavaScript files which can be reused throughout the Node.js application. Each module in Node.js has its own context, so it cannot interfere with other modules or pollute global scope.
 What is the difference between -g and -save?
-    * ```-g``` installs a package globaly, ```-save``` targets where you want to save to 
+* ```-g``` installs a package globaly (security purposes), ```-save``` targets where you want to save to 
 What is a .gitignore file?
-    *  .gitignore tells git which files (or patterns) it should ignore. It's usually used to avoid committing transient files from your working directory that aren't useful to other collaborators, such as compilation products, temporary files IDEs create, etc.
+*  .gitignore tells git which files (or patterns) it should ignore. It's usually used to avoid committing transient files from your working directory that aren't useful to other collaborators, such as compilation products, temporary files IDEs create, etc.
 Why should I put `node_modules/` in my git ignore?
-    * You don’t want to version control someone else’s code in your code
+* You don’t want to version control someone else’s code in your code
