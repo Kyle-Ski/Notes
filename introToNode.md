@@ -33,6 +33,7 @@ Why do we use it?
 * We use it to manage Node.js libraries
 How do we use it?
 * Through the command line
+* ```npm init -y```
 What is a package.json?
 * It is a file that contains the metadata for the project. It also handles the dependencies
 How do we create one?
@@ -40,7 +41,7 @@ How do we create one?
 2. In your terminal type ```npm adduser``` and sign in using your credentials
 3. Make a package with ```md [package name]```
 4. Create a package.json file ```cd [package name] && touch package.json```
-5. In the package.json name the package like ```{
+5. In the package.json name the package like ```    {
     "name": @[username]/[package name]
 }``` 
 This creates the package under the scope of your username (callled a scoped package)
@@ -49,6 +50,7 @@ This creates the package under the scope of your username (callled a scoped pack
     "name": @[username]/[package name],
     "version": "1.0.0"
 }
+```
 
 Given a version number MAJOR.MINOR.PATCH, increment the
 * MAJOR version when you make incompatible API changes,
