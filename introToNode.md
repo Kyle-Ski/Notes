@@ -43,11 +43,12 @@ How do we create one?
     "name": @[username]/[package name]
 }``` 
 This creates the package under the scope of your username (callled a scoped package)
-6. Add a version to your package: 
+6. Add a version to your package
 ```{
     "name": @[username]/[package name],
     "version": "1.0.0"
 }```
+
 Given a version number MAJOR.MINOR.PATCH, increment the
 * MAJOR version when you make incompatible API changes,
 * MINOR version when you add functionality in a backwards-compatible manner, and
