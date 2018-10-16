@@ -1,0 +1,22 @@
+CLI commands:
+
+-'ls' lists things inside directory
+-'mkdir' creats folder
+-'ls -a' lists all things inside directory
+-'cat' concatonate  
+-'mv' move file, using ~/'directory'
+-'.' or '..' relative directory
+    a. '..' previous directory
+    b. '.' current
+-relative path for moving files:
+    "mv ./'file to move' ../'previous directory'"
+-'du | sort -nr | less' disk usage sorted numerically and shown by the less command
+
+-'ls -lt | head' displays the ten newest files in the current directory
+-'du | sort -nr' displaysa list of directories and how much space they consume largest to smallest
+-'find . -type f -print | wc -l' displays the total number of files in the current working directory and subdirectories
+-'grep' searches for the literal
+-'-i' ignores case
+    so the command 'grep -i "term you're searching" text.txt' ignores the case of the tearm your searching
+-'-v' invert match option searches for everything except that
+-'-n' line number option
