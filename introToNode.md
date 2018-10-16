@@ -6,35 +6,46 @@ For this warm up you will familiarize yourself with the node eco system. Working
 
 ### Node.JS
 
+
 What is node?
 * Node is a JavaScript runtime enviorment, that is used outside of the browser.  We often use it to build back-end services (APIs).
+
 Where did it come from?
 * Created in 2009
 * Node team took out V8 engine from the chrome browser
+
 Why do we use it?
 * Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
 What does REPL stand for?
 * Read-Evaluate-Print-Loop
+
 Are all of the most current JS features available to us in node.JS?
 * yes
 ### Express
 
 What is Express?
 * Express is a fast, unpointed, minimalist web node.js framework
+
 Why do we use it?
 * Express 3.x is a light-weight web application framework to help organize your web application into an MVC architecture on the server side. You can use a variety of choices for your templating language (like EJS, Jade, and Dust.js).
+
 How do we use it?
 * You can then use a database like MongoDB with Mongoose (for modeling) to provide a backend for your Node.js application. Express.js basically helps you manage everything, from routes, to handling requests and views.
 ### Npm
 
 What does 'npm' stand for?
 * "Node Package Manager"
+
 Why do we use it?
 * We use it to manage Node.js libraries
+
 How do we use it?
 * Through the command line
+
 What is a package.json?
 * It is a file that contains the metadata for the project. It also handles the dependencies
+
 How do we create one?
 1. Create a NPM account 
 2. In your terminal type ```npm adduser``` and sign in using your credentials
