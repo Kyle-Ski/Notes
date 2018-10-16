@@ -1,12 +1,11 @@
 # Objects
 *Why Objects?*
--Allow us to assign certain properties
--Objects can go into arrays
--Creates a dictionary of things
-    *A word and a definition
-    *anything that has a key value pair
-    *Allows us to keep nesting
-
+* Allow us to assign certain properties
+* Objects can go into arrays
+* Creates a dictionary of things
+    * A word and a definition
+    * anything that has a key value pair
+    * Allows us to keep nesting
 ```
 var instructor = {
     name: 'Berto',
@@ -27,6 +26,10 @@ console.log(student.name)
 ```
 Doesn't matter where name is stored, the object has key value pairs that are specific for each value.
 More powerful than an array.
+
+## Quick note on 'undefined' vs 'not defined'
+* undefined: *the variable exists but doesn't have a value assigned*
+* not defined: *no such variable exists anywhere*
 
 ## Acess Properties in Objects
 -Dot notation
@@ -100,6 +103,22 @@ value: Berto
 value: 29
 value: 6ft
 value: [{name: 'iago', age: 4, color: 'brown'}, 'spidy']
+```
+
+## Making sure an object exists
+*This is from the color array problem where you have to see if the object key exists*
+```
+function color(array){
+    var obj = {}
+    for (let index = 0; index < array.length; index++) {
+        if(obj.hasOwnProperty(array[index])){
+            obj[array[index]] += 1
+        }else {
+            obj[array[index]] = 1
+        }
+    }
+    return obj
+}
 ```
 
 

@@ -1,0 +1,26 @@
+.special{
+    background-color: wheat;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+    height: 80px;
+    font-size: 20px;
+    
+}
+
+.images{
+    height: 50px;
+    width: 50px; 
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: green;
+    font: white;
+}
