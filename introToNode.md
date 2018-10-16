@@ -10,6 +10,7 @@ What is node?
 * Node is a JavaScript runtime enviorment, that is used outside of the browser.  We often use it to build back-end services (APIs).
 Where did it come from?
 * Created in 2009
+* Node team took out V8 engine from the chrome browser
 Why do we use it?
 * Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 What does REPL stand for?
@@ -47,7 +48,7 @@ This creates the package under the scope of your username (callled a scoped pack
 ```{
     "name": @[username]/[package name],
     "version": "1.0.0"
-}```
+}
 
 Given a version number MAJOR.MINOR.PATCH, increment the
 * MAJOR version when you make incompatible API changes,
