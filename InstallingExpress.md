@@ -20,7 +20,7 @@
 * add and commit initial commit 
 * push
 ### Step 5 
-* In ```package.json``` add the ```"start": "node index.js"```
+* In ```package.json``` add the ```"start": "node index.js"``` in the script
 * This starts up the file when you ```npm start```
 ### Step 6 
 * In ```index.js```:
