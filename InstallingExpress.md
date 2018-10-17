@@ -39,6 +39,7 @@ const app = express()
 const port = 3000
 app.listen(port, () => console.log(`I got you on ${port}`))
 ```
+* ```app.listen``` spins up your port 
 * annnnnd:
 ```
 >npm start
@@ -49,7 +50,8 @@ app.get('/', (req, res, next) => {
     res.send('rawr')
 })
 ```
-When we make a get request to the port we will get the 'rawr' back on the screen
+When we make a get request to the port we will get the 'rawr' back on the screen,
+*in this case the port will take us to the home*
 
 ### Adding CORS to server
 ```
