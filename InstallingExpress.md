@@ -61,3 +61,13 @@ When we make a get request to the port we will get the 'rawr' back on the screen
 ```
 app.use(cors())
 ```
+### Adding body-parser
+```
+>npm install body-parser
+```
+*in ```index.js```:*
+```
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+```
