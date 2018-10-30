@@ -1,4 +1,10 @@
-## Creating a Table using psql:
+# SQL
+## Table of contents:
+* [DDL](#DDL)
+    - [Constraints](#Constraints)
+    - [Alter Table]
+* [DML](#DML)(#ALTER_TABLE)
+## Creating a Database using psql:
 * create database: `[home database]=# CREATE DATABASE [name];`
     - from `$` you can also use `createdb [database name]`
 * change into new database: `[home database]=# \c [name];`
@@ -22,6 +28,7 @@ CREATE TABLE
 * start psql and immediatly go into the database: `$ psql [database name]`
 [More notes on PostgreSQL](https://docs.google.com/presentation/d/167DPjLdsCqT0x-ysgWOjn7q4Y-9AcDHcO9wGPY7bgb4/edit#slide=id.gd7ac0ef0a_0_8)
 
+# DDL (Data Definition Language)
 ## Constraints
 Allows you to set values to columns instead of null
 ex:
@@ -46,3 +53,34 @@ CREATE TABLE student (
 * Re-name a table `RENAME TO` or re-name a column `ALTER TABLE [table name] RENAME COLUMN [column name] TO [new name];`
 
 [*Practice with constraints and alter table*](https://docs.google.com/presentation/d/1hOQERqa5UFrENm7HXJfXxElmgdBY7jssnW3Mm4RvwWw/edit#slide=id.gf3363e556_2_28)
+
+# DML (Data Manipulation Language)
+*Used to retrieve, store, modify, delete, insert and update data in database*
+## Create and Insert
+Creating an 'instructor' table with column names and data types:
+```
+CREATE TABLE instructor (id serial, 
+first_name varchar, 
+last_name varchar, 
+title_id int);
+```
+Inserting data into the 'instructor' table:
+```
+INSERT INTO instructor VALUES (default, ‘Kyle’, ‘Coberly’, 1);
+INSERT INTO instructor VALUES (default, ‘Danny’, ‘Fritz’, 1);
+INSERT INTO instructor VALUES (default, ‘Roberto’, ‘Ortega’, 3);
+INSERT INTO instructor VALUES (default, ‘Elana’, ‘Kopelevich’, 4);
+```
+
+## Select and Where
+* Select: `SELECT [column to select] FROM [database];`
+    - You always need to have a column to select from ('*' can be used to select all) and a database
+* Where:
+```
+SELECT [column to select] FROM [database]
+WHERE [column] [search condition];  
+```
+* Using `WHERE` you have access to arithmetic, comparison, and logical opperators:
+    - Arithmetic: `+  -   *  /  %`
+    - Comparison: `=  !=  <>  >  <  >=  <=`
+    - Logical: `AND  BETWEEN  IN  LIKE  NOT  OR  LIMIT`
