@@ -1,9 +1,9 @@
 # SQL
 ## Table of contents:
-* [DDL](#DDL)
+* DDL
     - [Constraints](#Constraints)
     - [Alter Table](#ALTER_TABLE)
-* [DML](#DML)
+* DML
     - [Create and Insert](#Create-and-Insert)
     - [Select and Where](#Select-and-Where)
     - [Aggregate Functions](#Aggregate-Functions)
