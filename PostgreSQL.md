@@ -2,12 +2,14 @@
 ## Table of contents:
 * [DDL](#DDL)
     - [Constraints](#Constraints)
-    - [Alter Table](#ALTER TABLE)
+    - [Alter Table](#ALTER_TABLE)
 * [DML](#DML)
-    - [Create and Insert](#Create and Insert)
-    - [Select and Where](#Select and Where)
-    - [Aggregate Functions](#Aggregate Functions)
+    - [Create and Insert](#Create_and_Insert)
+    - [Select and Where](#Select_and_Where)
+    - [Aggregate Functions](#Aggregate-Functions)
     - [Clauses](https://docs.google.com/presentation/d/1fuwnawYO7q12IiDzNpvEsoyUaopYsAaX8umgXuoPKYg/edit#slide=id.g14d82d5eb8_0_309)
+    - [Update](#Update)
+    - [Delete](#Delete)
 ## Creating a Database using psql:
 * create database: `[home database]=# CREATE DATABASE [name];`
     - from `$` you can also use `createdb [database name]`
@@ -94,4 +96,19 @@ WHERE [column] [search condition];
 * Functions that return a value in a given column
 * Must be passed a column name and `FROM` database
 
+## Update
+* Allows you to update a value in a column for a given id:
+```
+UPDATE [table name]
+SET [column to change] = 1
+WHERE [column to target by] = [data to target in target column];
+```
+*Make sure you include the `WHERE` to avoid overriding all values*
 
+## Delete
+* Will find record you are looking for and take it out (pretty self explanitory)
+```
+DELETE FROM [table name]
+WHERE [column] = [data to delete by];
+```
+*Need `WHERE` column to tell the database which row you want to delete*
