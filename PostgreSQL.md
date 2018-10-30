@@ -21,3 +21,25 @@ CREATE TABLE
 * quit psql: `\q`
 * start psql and immediatly go into the database: `$ psql [database name]`
 [More notes on PostgreSQL](https://docs.google.com/presentation/d/167DPjLdsCqT0x-ysgWOjn7q4Y-9AcDHcO9wGPY7bgb4/edit#slide=id.gd7ac0ef0a_0_8)
+
+## Constraints
+Allows you to set values to columns instead of null
+ex:
+```CREATE TABLE student (
+    id serial PRIMARY KEY,
+    name text NOT NULL,
+    email text UNIQUE,
+    cohort_id integer REFERENCES cohort(id)
+);
+```
+^^Here the "PRIMARY KEY", "UNIQUE", ect are constraints
+* `REFRENCES` is a way to define a foreign key
+
+
+## `ALTER TABLE`
+* Allows you to add a column to a Table: `ALTER TABLE [table name] ADD [column name] [data type];`
+* Lets you take a column out of a table: `ALTER TABLE [table name] DROP [column name];`
+* Add a default constaint: `ALTER TABLE [table name] ALTER COLUMN [column name] SET DEFAULT [value];`
+    - You can also drop a default with `DROP DEFAULT`
+* Add a constraint that is unique to a column to a table: `ALTER TABLE [table name] ADD CONSTRAINT [column name] UNIQUE (id);` 
+* Re-name a table `RENAME TO` or re-name a column `ALTER TABLE [table name] RENAME COLUMN [column name] TO [new name];`
