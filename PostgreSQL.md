@@ -4,8 +4,8 @@
     - [Constraints](#Constraints)
     - [Alter Table](#ALTER_TABLE)
 * [DML](#DML)
-    - [Create and Insert](#Create_and_Insert)
-    - [Select and Where](#Select_and_Where)
+    - [Create and Insert](#Create-and-Insert)
+    - [Select and Where](#Select-and-Where)
     - [Aggregate Functions](#Aggregate-Functions)
     - [Clauses](https://docs.google.com/presentation/d/1fuwnawYO7q12IiDzNpvEsoyUaopYsAaX8umgXuoPKYg/edit#slide=id.g14d82d5eb8_0_309)
     - [Update](#Update)
@@ -92,9 +92,14 @@ WHERE [column] [search condition];
     - [Logical:](https://sqlzoo.net/wiki) `AND  BETWEEN  IN  LIKE  NOT  OR  LIMIT `
     - For use with null use: `IS NULL` or `IS NOT NULL`
         
-## [Aggregate Functions](https://docs.google.com/presentation/d/1fuwnawYO7q12IiDzNpvEsoyUaopYsAaX8umgXuoPKYg/edit#slide=id.g14d82d5eb8_0_314)
+## Aggregate Functions
 * Functions that return a value in a given column
 * Must be passed a column name and `FROM` database
+* `MIN()` - returns the smallest value in a given column
+* `MAX()` - returns the largest value in a given column
+* `SUM()` - returns the sum of the numeric values in a given column
+* `AVG()` - returns the average value of a given column
+* `COUNT()` - returns the total number of values in a given column
 
 ## Update
 * Allows you to update a value in a column for a given id:
