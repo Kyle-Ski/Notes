@@ -2,8 +2,12 @@
 ## Table of contents:
 * [DDL](#DDL)
     - [Constraints](#Constraints)
-    - [Alter Table](#ALTER_TABLE)
+    - [Alter Table](#ALTER TABLE)
 * [DML](#DML)
+    - [Create and Insert](#Create and Insert)
+    - [Select and Where](#Select and Where)
+    - [Aggregate Functions](#Aggregate Functions)
+    - [Clauses](https://docs.google.com/presentation/d/1fuwnawYO7q12IiDzNpvEsoyUaopYsAaX8umgXuoPKYg/edit#slide=id.g14d82d5eb8_0_309)
 ## Creating a Database using psql:
 * create database: `[home database]=# CREATE DATABASE [name];`
     - from `$` you can also use `createdb [database name]`
@@ -83,4 +87,11 @@ WHERE [column] [search condition];
 * Using `WHERE` you have access to arithmetic, comparison, and logical opperators:
     - Arithmetic: `+  -   *  /  %`
     - Comparison: `=  !=  <>  >  <  >=  <=`
-    - Logical: `AND  BETWEEN  IN  LIKE  NOT  OR  LIMIT`
+    - [Logical:](https://sqlzoo.net/wiki) `AND  BETWEEN  IN  LIKE  NOT  OR  LIMIT `
+    - For use with null use: `IS NULL` or `IS NOT NULL`
+        
+## [Aggregate Functions](https://docs.google.com/presentation/d/1fuwnawYO7q12IiDzNpvEsoyUaopYsAaX8umgXuoPKYg/edit#slide=id.g14d82d5eb8_0_314)
+* Functions that return a value in a given column
+* Must be passed a column name and `FROM` database
+
+
