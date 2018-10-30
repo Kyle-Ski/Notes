@@ -20,3 +20,4 @@ CREATE TABLE
 * list out the records: `[db name]=# SELECT * FROM [table name];`
 * quit psql: `\q`
 * start psql and immediatly go into the database: `$ psql [database name]`
+[More notes on PostgreSQL](https://docs.google.com/presentation/d/167DPjLdsCqT0x-ysgWOjn7q4Y-9AcDHcO9wGPY7bgb4/edit#slide=id.gd7ac0ef0a_0_8)
