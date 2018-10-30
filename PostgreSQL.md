@@ -2,8 +2,8 @@
 ## Table of contents:
 * [DDL](#DDL)
     - [Constraints](#Constraints)
-    - [Alter Table]
-* [DML](#DML)(#ALTER_TABLE)
+    - [Alter Table](#ALTER_TABLE)
+* [DML](#DML)
 ## Creating a Database using psql:
 * create database: `[home database]=# CREATE DATABASE [name];`
     - from `$` you can also use `createdb [database name]`
