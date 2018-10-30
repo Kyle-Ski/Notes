@@ -25,7 +25,8 @@ CREATE TABLE
 ## Constraints
 Allows you to set values to columns instead of null
 ex:
-```CREATE TABLE student (
+```
+CREATE TABLE student (
     id serial PRIMARY KEY,
     name text NOT NULL,
     email text UNIQUE,
@@ -43,3 +44,5 @@ ex:
     - You can also drop a default with `DROP DEFAULT`
 * Add a constraint that is unique to a column to a table: `ALTER TABLE [table name] ADD CONSTRAINT [column name] UNIQUE (id);` 
 * Re-name a table `RENAME TO` or re-name a column `ALTER TABLE [table name] RENAME COLUMN [column name] TO [new name];`
+
+[*Practice with constraints and alter table*](https://docs.google.com/presentation/d/1hOQERqa5UFrENm7HXJfXxElmgdBY7jssnW3Mm4RvwWw/edit#slide=id.gf3363e556_2_28)
