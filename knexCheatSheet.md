@@ -24,7 +24,9 @@ module.exports = {
 };
 ```
 *Make sure the connection is a string in the developement object*
+
 6. Create a connection file add things relating to database `mkdir db && touch connection.js`
+
 7. Add the following to the connection file:
 ```
 // Set our environment
