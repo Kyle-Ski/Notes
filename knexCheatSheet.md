@@ -71,7 +71,7 @@ Inside the boilerplate file that this command created you'll see something like:
 ```
 exports.seed = function(knex, Promise) {
     // Deletes ALL existing entries
-    return knex(['table name']).del()
+    return knex.raw('DELETE FROM "[table name]"; ALTER SEQUENCE [table name]_id_seq RESTART WITH 64;')
     .then(function () {
         // Inserts seed entries
         return knex(['table name']).insert([
