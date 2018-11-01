@@ -1,4 +1,5 @@
 # Cheat Sheet for installing [Knex](https://knexjs.org/)
+_[Great Knex Cheatcheat](https://devhints.io/knex)_
 1. In repo, `npm install knex`
 2. `npm install pg` (install postgresql)
 3. `knex init`
