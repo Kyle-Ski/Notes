@@ -1,4 +1,4 @@
-```js
+```r
 # Logs
 logs
 *.log
