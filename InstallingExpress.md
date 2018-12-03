@@ -14,7 +14,7 @@
 >git init
 >touch .gitignore && code .gitignore
 ```
-* add "the last (```.gitignore```)[https://github.com/Kyle-Ski/Notes/blob/master/theLastGitignore.md] you will ever need"
+* add "the last [```.gitignore```](https://github.com/Kyle-Ski/Notes/blob/master/theLastGitignore.md) you will ever need"
 ### Step 4 
 * Create GitHub Repo
 * add and commit initial commit 
