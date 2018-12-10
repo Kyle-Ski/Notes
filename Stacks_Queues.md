@@ -15,9 +15,9 @@
 
 #### Sorting A Stack
 *What we know:*
-- have to start at the top and go through piece by piece
-- have to pop
-**, To sort:**
+* *have to start at the top and go through piece by piece*
+* *have to pop*
+**So, To sort:**
 * Pop each element out into another accumulator
 * sort each element
 * Push them back into the stack from the accumulator
