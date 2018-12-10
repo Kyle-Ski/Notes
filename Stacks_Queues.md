@@ -33,7 +33,7 @@
     - a new person enters the line
 * **Dequeue:** Take out from the front of the line
     - the person from the front exits the line
-**Examples:**
+#### **Examples:**
 - computer start up/sequential
 - event scheduler in JS
 - job scheduling 
